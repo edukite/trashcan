@@ -1,0 +1,212 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html{
+
+    display: block;
+
+}
+
+body{
+
+    
+    font-family: 'Quattrocento Sans', sans-serif;
+    background: url(images/background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+.container{
+
+    
+
+
+}
+
+
+
+
+/*inicio de la barra de navegacion*/
+
+.main-nav{
+
+    color: white;
+    background-color: black;
+    width: 100%;
+    position: fixed !important; /*para que se quede pegada*/
+    top: 0 !important;
+    z-index: 2;
+}
+
+
+.main-nav-list{
+  
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+li{
+    padding-right: 70px !important; /*espacio entre los items de la lista*/
+    
+}
+
+/*animacion de los links de la barra de navegacion*/
+a.nav-link{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+    
+    
+a.nav-link:hover {
+    color: #fff;
+}
+
+a.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a.nav-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+    /*fin de la barra de navegacion*/
+
+
+a.logo-nintendo {
+    background-color: #E60012;
+    width: 165px; 
+    margin-left: 15px; 
+    height: 110px; 
+    text-align: center; 
+    padding-top: 53px; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    z-index: 2; /*superposicion*/
+    display: block; 
+    border-radius: 0 0 15px 15px; 
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2); 
+}
+
+a.logo-nintendo:hover{
+
+    transform: translateY(-26px);
+    transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: 0s;
+    will-change: transform;
+
+}
+
+/*contenido de la pagina*/
+
+.presentation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: calc(100% + 200px);
+    background-image: url(images/mapa.jpg);
+    animation: mapWalk 40s ease-in-out infinite alternate;
+    
+}
+
+.logo{
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin-top: 180px;
+    margin-left: 780px;
+
+}
+
+
+@keyframes mapWalk{
+    25%{
+        transform:translate(-200px,-25%)
+    }
+    
+    50%{
+        transform:translate(0,-25%)
+    }
+    
+    75%{
+        transform:translate(0,0)
+    }
+    
+    100%{
+        transform:translate(-200px,0)
+    }
+}
+
+
+
+.content-1{
+
+
+   position: relative;
+    height: 200px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 400px;
+    z-index: 1;
+
+   
+}
+
+.content-2{
+
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    
+    z-index: 1;
+
+    
+}
+
+
+footer{
+
+    background-color: #3a1d5b;
+    color: #fff;
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 6px;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+
+}
+
+
+
+
+
+
