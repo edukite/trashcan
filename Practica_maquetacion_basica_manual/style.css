@@ -22,12 +22,7 @@ body{
     
 }
 
-.container{
 
-    
-
-
-}
 
 
 
@@ -66,11 +61,8 @@ a.nav-link{
 }
     
     
-a.nav-link:hover {
-    color: #fff;
-}
 
-a.nav-link:before {
+a.nav-link::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -85,11 +77,43 @@ a.nav-link:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-a.nav-link:hover:before {
+.nav-link:hover::before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+
+a.nav-link-active{
+
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+
+
+}
+
+
+a.nav-link-active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    
+}
+
+
+
+.nav-link-active:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
 
     /*fin de la barra de navegacion*/
 
@@ -136,12 +160,34 @@ a.logo-nintendo:hover{
 }
 
 .logo{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin-top: 180px;
+    text-align: center;
+
+}
+
+.byleth-m{
 
     position: absolute;
     top: 0;
     z-index: 1;
     margin-top: 180px;
-    margin-left: 780px;
+    margin-left: 20%;
+
+
+}
+
+.byleth-f{
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin-top: 180px;
+    margin-left: 60%;    
+
 
 }
 
@@ -170,13 +216,30 @@ a.logo-nintendo:hover{
 
 
    position: relative;
-    height: 200px;
-    width: 100%;
-    background-color: #fff;
-    margin-top: 400px;
+    height: 240px;
+    width: 10000px;
+    background-image:url(images/carrusel.jpg);
+    background-repeat: repeat-x;
+    margin-top: 500px;
     z-index: 1;
 
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: choiceBG;
    
+}
+
+@keyframes choiceBG{
+    
+    to{
+        transform:translateX(-1105px)
+    }
+
 }
 
 .content-2{
@@ -185,23 +248,120 @@ a.logo-nintendo:hover{
     height: 1200px;
     width: 100%;
     background-image: url(images/background.jpg);
-    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: 1;
 
     
 }
 
+.seccion-1{
 
-footer{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 100px;
+    color: #3a1d5b;
 
-    background-color: #3a1d5b;
+    text-align: center;
+    font-size: 3.5em;
+    
+}
+
+
+
+
+.seccion-2{
+
+    display: flex;
+    
+    position: relative;
+    width: 100%;
+    height: 600px;
+    color: #3a1d5b;
+    font-size: 3.5em;
+    padding: 100px;
+
+}
+
+.trailer{
+
+    margin-left: 440px;
+   
+    width: 700px;
+    
+
+}
+
+
+
+
+
+.main-footer{
+
+    height: 700px;
+    background-image: url(images/footer_background.jpg);
     color: #fff;
-    overflow: hidden;
+    
     padding-bottom: 40px;
     padding-top: 6px;
     position: relative;
     bottom: 0;
     z-index: 2;
+    
+
+}
+
+.main-footer::before{
+
+    background-image: url(images/top.svg);
+    content: "";
+    display: block;
+    height: 22px;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+
+}
+
+.main-footer::after{
+
+    background-image: linear-gradient(to top,#160628 0,rgba(22,6,40,0) 98%);
+    bottom: 0;
+    content: "";
+    height: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.social-media{
+    
+    position: relative;
+    margin-top: 50px;
+    
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.social-media a{
+
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+   
+
+}
+
+.legal{
+
+    text-align: center;
+    
 
 }
 
