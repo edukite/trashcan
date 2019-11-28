@@ -1,0 +1,51 @@
+.tabla{
+
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+
+.tabla header{
+
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    letter-spacing: 15px;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+
+.tabla table{
+
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.tabla tr, th, td{
+
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.tabla td, th{
+
+    padding: 5px;
+
+}
+
+.gray-cell{
+
+    background-color: rgb(221, 221, 221);
+
+}
+

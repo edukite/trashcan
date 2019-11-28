@@ -1,0 +1,34 @@
+.tabla{
+
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    
+}
+.tabla table{
+
+    width: 100%;
+
+}
+
+.tabla header, h1{
+
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 5px;
+
+}
+
+.tabla  table, tr, th, td{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+
+.table tr, td{
+   
+   padding-bottom: 50px;
+    
+}

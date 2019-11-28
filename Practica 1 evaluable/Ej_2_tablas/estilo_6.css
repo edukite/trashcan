@@ -1,0 +1,67 @@
+.tabla{
+
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.tabla header{
+
+    background-color: rgb(255, 210, 8);
+    color: white;
+
+    text-align: center;
+    letter-spacing: 20px;
+
+}
+
+
+.tabla table{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    width: 100%;
+
+}
+
+.table tr, th, td{
+
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/*colores*/
+
+
+tr:nth-child(odd) td:nth-child(even){
+    
+    background-color: rgb(253, 198, 15);
+
+}
+
+tr:nth-child(even) td:nth-child(even){
+    
+    background-color: rgb(253, 150, 15);
+
+}
+
+tr:nth-child(odd) td:nth-child(odd){
+    
+    background-color: rgb(245, 245, 137);
+
+}
+
+th:nth-child(even){
+
+    background-color: rgb(253, 150, 15);
+
+}
+
+

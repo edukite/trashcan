@@ -1,0 +1,47 @@
+.tabla{
+
+    width: 500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.tabla header{
+
+    background-color: rgb(212, 209, 209);
+    color: white;
+    
+    text-align: center;
+    letter-spacing: 20px;
+    display: grid;
+}
+
+
+
+.tabla table{
+   
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th:nth-child(odd){
+    
+    background-color: rgb(212, 209, 209);
+
+}
+
+td:nth-child(odd){
+    
+    background-color: rgb(212, 209, 209);
+
+}
+
+.tabla th, td{
+
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
